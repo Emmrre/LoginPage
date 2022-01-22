@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_page/screen/screen.dart';
+import 'package:login_page/screen/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const LoginPage(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+     
+      home: LoginPage(),
 
     );
 
